@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class RandomQuoteService {
+export class QuoteService {
   async getAll() {
     const quotes = await fetch('https://type.fit/api/quotes').then((res) =>
       res.json(),

@@ -1,15 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { RandomQuoteProvider } from './random-quote.provider';
+import { QuoteProvider } from './quote.provider';
 
-describe('RandomQuote', () => {
-  let provider: RandomQuoteProvider;
+describe('Quote', () => {
+  let provider: QuoteProvider;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [RandomQuoteProvider],
+      providers: [QuoteProvider],
     }).compile();
 
-    provider = module.get<RandomQuoteProvider>(RandomQuoteProvider);
+    provider = module.get<QuoteProvider>(QuoteProvider);
   });
 
   it('should be defined', () => {
